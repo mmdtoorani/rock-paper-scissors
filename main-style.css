@@ -1,0 +1,16 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+section {
+  text-align: center;
+}
+
+.head-title {
+  font-size: xx-large;
+}
+
+#result-div {
+  display: flex;
+  justify-content: space-evenly;
+}

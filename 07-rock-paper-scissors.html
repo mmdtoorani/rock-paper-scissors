@@ -2,15 +2,31 @@
 <html>
   <head>
     <title>rock paper scissors</title>
+    <link rel="stylesheet" href="main-style.css" />
   </head>
   <body>
-    <p>Rock Paper Scissors</p>
+    <section id="head">
+      <h1 class="head-title">Rock Paper Scissors</h1>
+    </section>
 
-    <button onclick="rock()">Rock</button>
-    <button onclick="paper()">Paper</button>
-    <button onclick="scissors()">Scissors</button>
+    <section id="choices">
+      <h3>Choose!</h3>
+      <div class="buttons">
+        <button onclick="rock()">Rock</button>
+        <button onclick="paper()">Paper</button>
+        <button onclick="scissors()">Scissors</button>
+      </div>
+    </section>
 
-    <p>Click here for the final project</p>
+    <section id="game-section"></section>
+
+    <section id="result-section">
+      <div id="result-div">
+        <h4>Won=0</h4>
+        <h4>Lost=0</h4>
+        <h4>Tie=0</h4>
+      </div>
+    </section>
 
     <script>
       function pickComputerMove() {
