@@ -12,7 +12,9 @@ function pickComputerMove() {
 }
 
 function rock() {
+  // TODO: corect this
   computerMove = pickComputerMove();
+  shakingRocks();
   myMove = "rock";
   if (computerMove == "rock") {
     res = "Tie";
@@ -25,7 +27,9 @@ function rock() {
 }
 
 function paper() {
+  // TODO: corect this
   computerMove = pickComputerMove();
+  shakingRocks();
   myMove = "paper";
   if (computerMove === "rock") {
     res = "Win";
@@ -38,7 +42,9 @@ function paper() {
 }
 
 function scissors() {
+  // TODO: corect this
   computerMove = pickComputerMove();
+  shakingRocks();
   myMove = "scissors";
   if (computerMove === "rock") {
     res = "loose";
@@ -51,5 +57,10 @@ function scissors() {
 }
 
 function shakingRocks() {
+  // TODO: corect this
   // TODO: When this function has called it must show two rock animation shaking for start
+  const yourChoice = document.getElementById("your-choice");
+  const computerChoice = document.getElementById("computer-choice");
+  console.log(yourChoice);
+  console.log(computerChoice);
 }

@@ -3,6 +3,10 @@ body {
   background-color: rgb(233, 231, 243);
 }
 
+.head-title {
+  font-size: xx-large;
+}
+
 button {
   font-family: "Courier New", Courier, monospace;
 }
@@ -27,8 +31,45 @@ section {
   height: 155px;
 }
 
-.head-title {
-  font-size: xx-large;
+#game-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#your-choice {
+  opacity: 0%;
+  transform: rotate(45deg) scaleX(-1);
+  position: relative;
+  animation: your-choice-move 1.6s ease forwards;
+}
+
+@keyframes your-choice-move {
+  from {
+    left: 0%;
+    opacity: 0%;
+  }
+  to {
+    left: 25%;
+    opacity: 100%;
+  }
+}
+
+#computer-choice {
+  opacity: 0%;
+  transform: rotate(315deg) scaleX(1);
+  position: relative;
+  animation: computer-choice-move 1.6s ease forwards;
+}
+
+@keyframes computer-choice-move {
+  from {
+    left: 0%;
+    opacity: 0%;
+  }
+  to {
+    left: -25%;
+    opacity: 100%;
+  }
 }
 
 #result-div {
