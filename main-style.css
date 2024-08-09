@@ -1,9 +1,30 @@
 body {
   font-family: "Courier New", Courier, monospace;
+  background-color: rgb(233, 231, 243);
+}
+
+button {
+  font-family: "Courier New", Courier, monospace;
 }
 
 section {
   text-align: center;
+}
+
+.choices-btns {
+  margin: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-img {
+  height: 150px;
+  cursor: pointer;
+  transition: height 0.2s;
+}
+
+.btn-img:hover {
+  height: 155px;
 }
 
 .head-title {
